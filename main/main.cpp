@@ -6,7 +6,6 @@ Bluepad32 migration runtime for Amiga DB9 output.
 #include "nvs_flash.h"
 #include "esp_log.h"
 #include <driver/gpio.h>
-#include <cstring>
 
 extern "C" {
 #include <btstack_port_esp32.h>
@@ -56,7 +55,7 @@ static AmigaDB9Joystick joystick({
     static_cast<gpio_num_t>(MOUSE_MIDDLE_BTN_PIN),
 });
 
-static constexpr int kAnalogDeadzone = 140; // Bluepad32 axis range is roughly [-512, 511]
+static constexpr int kAnalogDeadzone = 140;
 
 static void apply_gamepad_to_outputs(const uni_gamepad_t* gp) {
     bool up = (gp->dpad & DPAD_UP) != 0;
@@ -64,7 +63,6 @@ static void apply_gamepad_to_outputs(const uni_gamepad_t* gp) {
     bool left = (gp->dpad & DPAD_LEFT) != 0;
     bool right = (gp->dpad & DPAD_RIGHT) != 0;
 
-    // Analog fallback when dpad is neutral
     if (!up && !down && !left && !right) {
         if (gp->axis_y < -kAnalogDeadzone)
             up = true;
@@ -98,7 +96,6 @@ static void apply_gamepad_to_outputs(const uni_gamepad_t* gp) {
                  gp->dpad, gp->buttons);
     }
 
-    // Optional mouse output from right stick + AB buttons
     int16_t mx = 0;
     int16_t my = 0;
     if (gp->axis_rx > kAnalogDeadzone)
@@ -134,7 +131,6 @@ static uni_error_t my_platform_on_device_discovered(bd_addr_t addr, const char* 
     (void)addr;
     (void)rssi;
 
-    // Keep this project mouse/gamepad only: reject Bluetooth keyboards.
     const bool is_peripheral = (cod & kCodMajorMask) == kCodMajorPeripheral;
     const bool has_keyboard_bit = (cod & kCodMinorMask & kCodMinorKeyboard) != 0;
     if (is_peripheral && has_keyboard_bit) {
