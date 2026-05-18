@@ -1,0 +1,5 @@
+Command: cmake -G Ninja -B /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6 -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/Users/morrisaaron/.espressif/tools/python/v6.0/venv/bin/python3 -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga
+-- Component directory /Users/morrisaaron/.espressif/v6.0/esp-idf/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- Configuring incomplete, errors occurred!

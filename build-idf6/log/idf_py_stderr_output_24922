@@ -1,0 +1,116 @@
+Command: ninja all
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+Configuration Report                                                            
+ ────────────────────────────────────────────────────────────────────────────── 
+   Parser Version: 1                                                            
+   Verbosity: default                                                           
+   Defaults policy: sdkconfig                                                   
+   Status: Finished with notifications                                          
+                                                                                
+  Disabled Symbols/Choices With User-Set Value                                  
+   ──────────────────────────────────────────────────────────────────────────   
+    * PARTITION_TABLE_CUSTOM_FILENAME (defined at                               
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/partition_table/K…    
+    with user-set value partitions.csv from                                     
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmpebzl_hc7       
+    * PARTITION_TABLE_FILENAME (defined at                                      
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/partition_table/K…    
+    with user-set value partitions_singleapp_large.csv from                     
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmpz6lbspbq       
+    * ESP_CONSOLE_UART_BAUDRATE (defined at                                     
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_stdio/Kconfig…    
+    with user-set value 115200 from                                             
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmpebzl_hc7       
+    * ESP_WIFI_ENABLED (defined at                                              
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_wifi/Kconfig:…    
+    with user-set value n from                                                  
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmpz6lbspbq       
+   ──────────────────────────────────────────────────────────────────────────   
+ ────────────────────────────────────────────────────────────────────────────── 
+CMake Warning at /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:65 (message):
+  Source file
+  '/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/altcp_proxyconnect.c'
+  belongs to component lwip but is being built by component btstack.  It is
+  recommended to build source files by defining component dependencies for
+  btstack via using idf_component_register(REQUIRES lwip) or
+  idf_component_register(PRIV_REQUIRES lwip) in the CMakeLists.txt of
+  btstack.
+Call Stack (most recent call first):
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:146 (__component_validation_check_sources)
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/CMakeLists.txt:349 (__component_validation_run_checks)
+
+
+CMake Warning at /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:65 (message):
+  Source file
+  '/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/fs.c'
+  belongs to component lwip but is being built by component btstack.  It is
+  recommended to build source files by defining component dependencies for
+  btstack via using idf_component_register(REQUIRES lwip) or
+  idf_component_register(PRIV_REQUIRES lwip) in the CMakeLists.txt of
+  btstack.
+Call Stack (most recent call first):
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:146 (__component_validation_check_sources)
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/CMakeLists.txt:349 (__component_validation_run_checks)
+
+
+CMake Warning at /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:65 (message):
+  Source file
+  '/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/fsdata.c'
+  belongs to component lwip but is being built by component btstack.  It is
+  recommended to build source files by defining component dependencies for
+  btstack via using idf_component_register(REQUIRES lwip) or
+  idf_component_register(PRIV_REQUIRES lwip) in the CMakeLists.txt of
+  btstack.
+Call Stack (most recent call first):
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:146 (__component_validation_check_sources)
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/CMakeLists.txt:349 (__component_validation_run_checks)
+
+
+CMake Warning at /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:65 (message):
+  Source file
+  '/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/http_client.c'
+  belongs to component lwip but is being built by component btstack.  It is
+  recommended to build source files by defining component dependencies for
+  btstack via using idf_component_register(REQUIRES lwip) or
+  idf_component_register(PRIV_REQUIRES lwip) in the CMakeLists.txt of
+  btstack.
+Call Stack (most recent call first):
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:146 (__component_validation_check_sources)
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/CMakeLists.txt:349 (__component_validation_run_checks)
+
+
+CMake Warning at /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:65 (message):
+  Source file
+  '/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/httpd.c'
+  belongs to component lwip but is being built by component btstack.  It is
+  recommended to build source files by defining component dependencies for
+  btstack via using idf_component_register(REQUIRES lwip) or
+  idf_component_register(PRIV_REQUIRES lwip) in the CMakeLists.txt of
+  btstack.
+Call Stack (most recent call first):
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:146 (__component_validation_check_sources)
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/CMakeLists.txt:349 (__component_validation_run_checks)
+
+
+CMake Warning at /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:98 (message):
+  Include directory
+  '/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/include'
+  belongs to component lwip but is being used by component btstack.  It is
+  recommended to define the component dependency for 'btstack' on the
+  component lwip, i.e.  'idf_component_register(...  REQUIRES lwip)' in the
+  CMakeLists.txt of btstack, and specify the included directory as
+  idf_component_register(...  INCLUDE_DIRS <dir relative to component>) in
+  the CMakeLists.txt of component lwip.
+Call Stack (most recent call first):
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component_validation.cmake:147 (__component_validation_check_include_dirs)
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/CMakeLists.txt:349 (__component_validation_run_checks)
+
+

@@ -1,0 +1,33 @@
+Command: ninja all
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+Configuration Report                                                            
+ ────────────────────────────────────────────────────────────────────────────── 
+   Parser Version: 1                                                            
+   Verbosity: default                                                           
+   Defaults policy: sdkconfig                                                   
+   Status: Finished with notifications                                          
+                                                                                
+  Disabled Symbols/Choices With User-Set Value                                  
+   ──────────────────────────────────────────────────────────────────────────   
+    * PARTITION_TABLE_CUSTOM_FILENAME (defined at                               
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/partition_table/K…    
+    with user-set value partitions.csv from                                     
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmp4xxrl0xv       
+    * PARTITION_TABLE_FILENAME (defined at                                      
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/partition_table/K…    
+    with user-set value partitions_singleapp_large.csv from                     
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmp2p_r0pn0       
+    * ESP_CONSOLE_UART_BAUDRATE (defined at                                     
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_stdio/Kconfig…    
+    with user-set value 115200 from                                             
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmp4xxrl0xv       
+   ──────────────────────────────────────────────────────────────────────────   
+ ────────────────────────────────────────────────────────────────────────────── 

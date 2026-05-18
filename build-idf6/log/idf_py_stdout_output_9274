@@ -1,0 +1,77 @@
+Command: /Users/morrisaaron/.espressif/tools/python/v6.0/venv/bin/python3 /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-0001 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6/esp32-bt2amiga.elf /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6/bootloader/bootloader.elf -m '/Users/morrisaaron/.espressif/tools/python/v6.0/venv/bin/python3' '/Users/morrisaaron/.espressif/v6.0/esp-idf/tools/idf.py' '-B' 'build-idf6' '-p' '/dev/cu.usbserial-0001'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 18 2026 09:32:02[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v1.0[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (34) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 0000a000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 00010000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00020000 00177000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2e730h (190256) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=0004e758 vaddr=3ffbdb60 size=018c0h (  6336) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=b96ach (759468) map[0m
+[0;32mI (427) esp_image: segment 3: paddr=001096d4 vaddr=3ffbf420 size=037b4h ( 14260) load[0m
+[0;32mI (433) esp_image: segment 4: paddr=0010ce90 vaddr=40080000 size=18298h ( 98968) load[0m
+[0;32mI (474) esp_image: segment 5: paddr=00125130 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (486) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (486) boot: Disabling RNG early entropy source...[0m
+[0;32mI (497) cpu_start: Multicore app[0m
+[0;32mI (505) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (505) cpu_start: Pro cpu start user code[0m
+[0;32mI (505) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (515) app_init: Project name:     esp32-bt2amiga[0m
+[0;32mI (520) app_init: App version:      f8ec749-dirty[0m
+[0;32mI (526) app_init: Compile time:     May 18 2026 09:33:30[0m
+[0;32mI (532) app_init: ELF file SHA256:  58012a8e8...[0m
+[0;32mI (537) app_init: ESP-IDF:          v6.0[0m
+[0;32mI (542) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (546) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (551) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (556) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (564) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (569) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (575) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFCADB0 len 00015250 (84 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 40098298 len 00007D68 (31 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (611) spi_flash: flash io: dio[0m
+[0;33mW (615) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (632) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (635) main_task: Started on CPU0[0m
+[0;32mI (639) main_task: Calling app_main()[0m
+[0;32mI (655) BTDM_INIT: BT controller compile version [045a658][0m
+[0;32mI (656) BTDM_INIT: Using main XTAL as clock source[0m
+[0;32mI (658) BTDM_INIT: Bluetooth MAC: c8:f0:9e:a4:8f:3e[0m
+[0;32mI (666) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (1393) BT_keyboard setup:: Power Settings: (ADV,SCAN,DEFAULT) 5, 5, 5[0m
+[0;32mI (1395) BT2AMIGA Main Module: /////////////////// PAIRING ACTIVATED ////////////////////////[0m
+[0;32mI (1399) BT2AMIGA Main Module: Scanning...[0m
+[0;32mI (1396) BT2AMIGA Main Module: Pairing requested! Stopping BLE connection daemon...[0m
+[0;32mI (1410) BTKeyboard: Last bonded device: fe:44:a1:be:f3:a2[0m
+[0;32mI (11286) BT2AMIGA Main Module: Pairing re-scan...[0m
+[0;32mI (11292) BTKeyboard: Last bonded device: fe:44:a1:be:f3:a2[0m
+[0;32mI (21158) BT2AMIGA Main Module: Pairing re-scan...[0m
+[0;32mI (21164) BTKeyboard: Last bonded device: fe:44:a1:be:f3:a2[0m
+[0;32mI (31036) BT2AMIGA Main Module: Pairing re-scan...[0m
+[0;32mI (31042) BTKeyboard: Last bonded device: fe:44:a1:be:f3:a2[0m
+[0;32mI (40908) BT2AMIGA Main Module: Pairing re-scan...[0m
+[0;32mI (40914) BTKeyboard: Last bonded device: fe:44:a1:be:f3:a2[0m

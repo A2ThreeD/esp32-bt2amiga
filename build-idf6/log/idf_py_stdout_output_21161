@@ -1,0 +1,268 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Component directory /Users/morrisaaron/.espressif/v6.0/esp-idf/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (6.0.0)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/sdkconfig
+Loading defaults file /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- App "esp32-bt2amiga" version: f8ec749-dirty
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+--   -> Preprocessing .in script: /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+-- Adding linker script /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Preprocessing .in script: /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Applying ldgen processing: /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /Users/morrisaaron/.espressif/v6.0/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Component idf::esp_trace will be linked with -Wl,--whole-archive
+-- Components: app_trace app_update bluepad32 bootloader bootloader_support bt btstack cmd_nvs cmd_system cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_blockdev esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_dma esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_i3c esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ana_cmpr esp_hal_ana_conv esp_hal_cam esp_hal_clock esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2c esp_hal_i2s esp_hal_ieee802154 esp_hal_jpeg esp_hal_lcd esp_hal_ledc esp_hal_mcpwm esp_hal_mspi esp_hal_parlio esp_hal_pcnt esp_hal_pmu esp_hal_ppa esp_hal_rmt esp_hal_rtc_timer esp_hal_security esp_hal_timg esp_hal_touch_sens esp_hal_twai esp_hal_uart esp_hal_usb esp_hal_wdt esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_libc esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_stdio esp_system esp_timer esp_trace esp_usb_cdc_rom_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 log lwip main mbedtls nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport ulp unity vfs wear_levelling wpa_supplicant xtensa
+-- Component paths: /Users/morrisaaron/.espressif/v6.0/esp-idf/components/app_trace /Users/morrisaaron/.espressif/v6.0/esp-idf/components/app_update /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/bluepad32 /Users/morrisaaron/.espressif/v6.0/esp-idf/components/bootloader /Users/morrisaaron/.espressif/v6.0/esp-idf/components/bootloader_support /Users/morrisaaron/.espressif/v6.0/esp-idf/components/bt /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/btstack /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/cmd_nvs /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/cmd_system /Users/morrisaaron/.espressif/v6.0/esp-idf/components/cmock /Users/morrisaaron/.espressif/v6.0/esp-idf/components/console /Users/morrisaaron/.espressif/v6.0/esp-idf/components/cxx /Users/morrisaaron/.espressif/v6.0/esp-idf/components/driver /Users/morrisaaron/.espressif/v6.0/esp-idf/components/efuse /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp-tls /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_adc /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_app_format /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_blockdev /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_bootloader_format /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_coex /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_common /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_ana_cmpr /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_bitscrambler /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_cam /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_dac /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_dma /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_gpio /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_gptimer /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_i2c /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_i2s /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_i3c /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_isp /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_jpeg /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_ledc /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_mcpwm /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_parlio /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_pcnt /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_ppa /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_rmt /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_sd_intf /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_sdio /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_sdm /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_sdmmc /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_sdspi /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_spi /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_touch_sens /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_tsens /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_twai /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_uart /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_usb_serial_jtag /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_eth /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_event /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_gdbstub /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_ana_cmpr /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_cam /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_clock /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_dma /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_gpio /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_gpspi /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_i2c /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_i2s /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_ieee802154 /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_jpeg /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_lcd /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_ledc /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_mcpwm /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_mspi /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_parlio /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_pcnt /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_pmu /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_ppa /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_rmt /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_rtc_timer /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_security /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_timg /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_touch_sens /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_twai /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_uart /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_usb /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_wdt /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hid /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_http_client /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_http_server /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_https_ota /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_https_server /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_lcd /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_libc /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_local_ctrl /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_mm /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_netif /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_netif_stack /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_partition /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_phy /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_pm /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_psram /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_ringbuf /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_security /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_stdio /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_timer /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_trace /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_usb_cdc_rom_console /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_wifi /Users/morrisaaron/.espressif/v6.0/esp-idf/components/espcoredump /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esptool_py /Users/morrisaaron/.espressif/v6.0/esp-idf/components/fatfs /Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos /Users/morrisaaron/.espressif/v6.0/esp-idf/components/hal /Users/morrisaaron/.espressif/v6.0/esp-idf/components/heap /Users/morrisaaron/.espressif/v6.0/esp-idf/components/http_parser /Users/morrisaaron/.espressif/v6.0/esp-idf/components/idf_test /Users/morrisaaron/.espressif/v6.0/esp-idf/components/ieee802154 /Users/morrisaaron/.espressif/v6.0/esp-idf/components/log /Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/main /Users/morrisaaron/.espressif/v6.0/esp-idf/components/mbedtls /Users/morrisaaron/.espressif/v6.0/esp-idf/components/nvs_flash /Users/morrisaaron/.espressif/v6.0/esp-idf/components/nvs_sec_provider /Users/morrisaaron/.espressif/v6.0/esp-idf/components/openthread /Users/morrisaaron/.espressif/v6.0/esp-idf/components/partition_table /Users/morrisaaron/.espressif/v6.0/esp-idf/components/perfmon /Users/morrisaaron/.espressif/v6.0/esp-idf/components/protobuf-c /Users/morrisaaron/.espressif/v6.0/esp-idf/components/protocomm /Users/morrisaaron/.espressif/v6.0/esp-idf/components/pthread /Users/morrisaaron/.espressif/v6.0/esp-idf/components/rt /Users/morrisaaron/.espressif/v6.0/esp-idf/components/sdmmc /Users/morrisaaron/.espressif/v6.0/esp-idf/components/soc /Users/morrisaaron/.espressif/v6.0/esp-idf/components/spi_flash /Users/morrisaaron/.espressif/v6.0/esp-idf/components/spiffs /Users/morrisaaron/.espressif/v6.0/esp-idf/components/tcp_transport /Users/morrisaaron/.espressif/v6.0/esp-idf/components/ulp /Users/morrisaaron/.espressif/v6.0/esp-idf/components/unity /Users/morrisaaron/.espressif/v6.0/esp-idf/components/vfs /Users/morrisaaron/.espressif/v6.0/esp-idf/components/wear_levelling /Users/morrisaaron/.espressif/v6.0/esp-idf/components/wpa_supplicant /Users/morrisaaron/.espressif/v6.0/esp-idf/components/xtensa
+-- Configuring done (6.5s)
+-- Generating done (0.5s)
+-- Build files have been written to: /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6
+[1/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/framing-sbc.c.obj
+[2/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/synthesis-dct8.c.obj
+[3/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/alloc.c.obj
+[4/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/bitalloc-sbc.c.obj
+[5/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/bitstream-decode.c.obj
+[6/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/dequant.c.obj
+[7/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/oi_codec_version.c.obj
+[8/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/synthesis-8-generated.c.obj
+[9/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/decoder-private.c.obj
+[10/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/bitalloc.c.obj
+[11/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/decoder-oina.c.obj
+[12/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/synthesis-sbc.c.obj
+[13/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/framing.c.obj
+[14/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/decoder/srce/decoder-sbc.c.obj
+[15/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_dct_coeffs.c.obj
+[16/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_enc_bit_alloc_ste.c.obj
+[17/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_enc_bit_alloc_mono.c.obj
+[18/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/hxcmod-player/mods/nao-deceased_by_disease.c.obj
+[19/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_packing.c.obj
+[20/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_dct.c.obj
+[21/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_enc_coeffs.c.obj
+[22/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_analysis.c.obj
+[23/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/bluedroid/encoder/srce/sbc_encoder.c.obj
+[24/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/micro-ecc/uECC.c.obj
+[25/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/battery_service_server.c.obj
+[26/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/bond_management_service_server.c.obj
+[27/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/md5/md5.c.obj
+[28/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/cycling_speed_and_cadence_service_server.c.obj
+[29/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/device_information_service_server.c.obj
+[30/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/hxcmod-player/hxcmod.c.obj
+[31/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/ancs_client.c.obj
+[32/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/heart_rate_service_server.c.obj
+[33/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/device_information_service_client.c.obj
+[34/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/yxml/yxml.c.obj
+[35/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/3rd-party/lwip/dhcp-server/dhserver.c.obj
+[36/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/immediate_alert_service_server.c.obj
+[37/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/battery_service_v1_server.c.obj
+[38/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/battery_service_client.c.obj
+[39/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/cycling_power_service_server.c.obj
+[40/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/hids_device.c.obj
+[41/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/immediate_alert_service_client.c.obj
+[42/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/nordic_spp_service_server.c.obj
+[43/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/link_loss_service_server.c.obj
+[44/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/scan_parameters_service_server.c.obj
+[45/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/link_loss_service_client.c.obj
+[46/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/tx_power_service_server.c.obj
+[47/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/tx_power_service_client.c.obj
+[48/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/ublox_spp_service_server.c.obj
+[49/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/scan_parameters_service_client.c.obj
+[50/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/le_device_db_memory.c.obj
+[51/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/att_dispatch.c.obj
+[52/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/le_device_db_tlv.c.obj
+[53/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/att_db_util.c.obj
+[54/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/adv_bearer.c.obj
+[55/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/gatt_bearer.c.obj
+[56/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/beacon.c.obj
+[57/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt-service/hids_client.c.obj
+[58/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt_service_client.c.obj
+[59/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_crypto.c.obj
+[60/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_foundation.c.obj
+[61/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_generic_default_transition_time_client.c.obj
+[62/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_generic_default_transition_time_server.c.obj
+[63/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_generic_on_off_client.c.obj
+[64/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/att_db.c.obj
+[65/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_generic_level_client.c.obj
+[66/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_generic_level_server.c.obj
+[67/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/att_server.c.obj
+[68/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_iv_index_seq_number.c.obj
+[69/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_access.c.obj
+[70/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_generic_on_off_server.c.obj
+[71/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh.c.obj
+[72/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_health_server.c.obj
+[73/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_peer.c.obj
+[74/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_configuration_client.c.obj
+[75/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_node.c.obj
+[76/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_keys.c.obj
+[77/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_configuration_server.c.obj
+[78/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/gatt_client.c.obj
+[79/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_virtual_addresses.c.obj
+[80/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_proxy.c.obj
+[81/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/pb_gatt.c.obj
+[82/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/provisioning.c.obj
+[83/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/pb_adv.c.obj
+[84/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_audio.c.obj
+[85/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ad_parser.c.obj
+[86/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_network.c.obj
+[87/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_base64_decoder.c.obj
+[88/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_lower_transport.c.obj
+[89/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_hid.c.obj
+[90/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_fsm.c.obj
+[91/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/provisioning_provisioner.c.obj
+[92/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_lc3.c.obj
+[93/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/provisioning_device.c.obj
+[94/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_hsm.c.obj
+[95/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_lc3plus_fraunhofer.c.obj
+[96/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_linked_queue.c.obj
+[97/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/mesh/mesh_upper_transport.c.obj
+[98/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_linked_list.c.obj
+[99/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_lc3_google.c.obj
+[100/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_crypto.c.obj
+[101/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_hid_parser.c.obj
+[102/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_run_loop_base.c.obj
+[103/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_memory_pool.c.obj
+[104/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_ltv_builder.c.obj
+[105/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_resample.c.obj
+[106/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_ring_buffer.c.obj
+[107/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_slip.c.obj
+[108/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_tlv.c.obj
+[109/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_tlv_none.c.obj
+[110/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_tlv_builder.c.obj
+[111/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_run_loop.c.obj
+[112/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_memory.c.obj
+[113/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_sample_rate_compensation.c.obj
+[114/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_uart_slip_wrapper.c.obj
+[115/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_dump_dispatch.c.obj
+[116/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_event_builder.c.obj
+[117/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_transport_h5.c.obj
+[118/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_dump.c.obj
+[119/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_event.c.obj
+[120/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_cmd.c.obj
+[121/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/btstack_util.c.obj
+[122/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_transport_em9304_spi.c.obj
+[123/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/platform/embedded/hci_dump_embedded_stdout.c.obj
+[124/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci_transport_h4.c.obj
+[125/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/l2cap_signaling.c.obj
+[126/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/platform/freertos/btstack_uart_block_freertos.c.obj
+[127/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/platform/freertos/btstack_run_loop_freertos.c.obj
+[128/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/altcp_proxyconnect.c.obj
+[129/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/fsdata.c.obj
+[130/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/fs.c.obj
+[131/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/btstack_tlv_esp32.c.obj
+[132/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/platform/lwip/bnep_lwip.c.obj
+[133/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/btstack_stdio_esp32.c.obj
+[134/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/btstack_port_esp32.c.obj
+[135/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/http_client.c.obj
+[136/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/a2dp_sink.c.obj
+[137/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/es8388.c.obj
+In file included from /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/btstack/es8388.h:6,
+                 from /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/btstack/es8388.c:4:
+/Users/morrisaaron/.espressif/v6.0/esp-idf/components/driver/i2c/include/driver/i2c.h:13:9: note: '#pragma message: 
+================================ CRITICAL WARNING ================================
+This legacy I2C driver (driver/i2c.h) is officially END-OF-LIFE (EOL) as of ESP-IDF v6.0.
+
+1. NO SUPPORT: ESP-IDF will not provide updates, bug fixes, or security patches timely.
+2. PLANNED REMOVAL: This driver WILL BE REMOVED in ESP-IDF v7.0 (next major release).
+3. ACTION REQUIRED: Migrate to 'driver/i2c_master.h' or 'driver/i2c_slave.h' immediately.
+   - If you are a library maintainer, please update your code.
+   - If you are using 3rd-party libraries, contact the authors for updates.
+
+4. SUPPRESS WARNING: Set Kconfig 'CONFIG_I2C_SUPPRESS_DEPRECATE_WARN=y' to silent
+   this warning. However, by doing so, YOU ASSUME ALL RISKS including potential
+   security vulnerabilities, system instability, and future incompatibility.
+
+For API reference of the new I2C driver, see: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/i2c.html
+For other items about migration, see: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/migration-guides/index.html
+==================================================================================
+   '
+   13 | #pragma message("\n" \
+      |         ^~~~~~~
+[138/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/apps/http/httpd.c.obj
+[139/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/a2dp_source.c.obj
+[140/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/a2dp.c.obj
+[141/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avdtp_acceptor.c.obj
+[142/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avdtp_sink.c.obj
+[143/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avdtp_source.c.obj
+[144/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avdtp_initiator.c.obj
+[145/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/ble/sm.c.obj
+[146/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp_media_item_iterator.c.obj
+[147/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp_browsing_controller.c.obj
+[148/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp_cover_art_client.c.obj
+[149/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp_browsing.c.obj
+[150/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp_browsing_target.c.obj
+[151/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp.c.obj
+[152/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avdtp.c.obj
+[153/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_link_key_db_memory.c.obj
+[154/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_cvsd_plc.c.obj
+[155/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_link_key_db_static.c.obj
+[156/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avdtp_util.c.obj
+[157/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_link_key_db_tlv.c.obj
+[158/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_sbc_decoder_bluedroid.c.obj
+[159/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_sbc_bluedroid.c.obj
+[160/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_sbc_encoder_bluedroid.c.obj
+[161/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/device_id_server.c.obj
+[162/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp_target.c.obj
+[163/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/btstack_sbc_plc.c.obj
+[164/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/bnep.c.obj
+[165/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/gatt_sdp.c.obj
+[166/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/avrcp_controller.c.obj
+[167/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hfp_codec.c.obj
+[168/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/goep_server.c.obj
+[169/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hfp_msbc.c.obj
+[170/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/l2cap.c.obj
+[171/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/goep_client.c.obj
+[172/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/obex_iterator.c.obj
+[173/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hid_device.c.obj
+[174/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hfp_gsm_model.c.obj
+[175/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/obex_message_builder.c.obj
+[176/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/obex_parser.c.obj
+[177/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hsp_ag.c.obj
+[178/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hid_host.c.obj
+[179/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hsp_hs.c.obj
+[180/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/obex_srm_client.c.obj
+[181/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/pan.c.obj
+[182/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/obex_srm_server.c.obj
+[183/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/sdp_client.c.obj
+[184/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/sdp_client_rfcomm.c.obj
+[185/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/spp_server.c.obj
+[186/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hfp.c.obj
+[187/440] Building C object esp-idf/cmd_system/CMakeFiles/__idf_cmd_system.dir/cmd_system.c.obj
+FAILED: esp-idf/cmd_system/CMakeFiles/__idf_cmd_system.dir/cmd_system.c.obj 
+/Users/morrisaaron/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v6.0\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6/config -I/Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/cmd_system -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_libc/platform_include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos/config/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos/config/include/freertos -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos/config/xtensa/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/freertos/esp_additions/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/include/soc -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/ldo/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/debug_probe/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/etm/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/power_supply/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/modem/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/port/esp32/. -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hw_support/port/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/heap/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/heap/tlsf -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/log/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/soc/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/soc/esp32 -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/soc/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/soc/esp32/register -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/hal/platform_port/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/hal/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/hal/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/esp32/include/esp32 -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_rom/esp32 -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_common/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system/port/soc -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_system/port/include/private -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_stdio/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/xtensa/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/xtensa/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/xtensa/deprecated_include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_gpio/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_gpio/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_usb/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_pmu/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_pmu/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_ana_conv/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_dma/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_i2s/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_i2s/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/include/apps -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/lwip/src/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/port/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/port/freertos/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/lwip/port/esp32xx/include/sys -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/console -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/vfs/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/spi_flash/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_mspi/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_mspi/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_gpspi/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_gpspi/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_clock/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_clock/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_blockdev/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/driver/i2c/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/driver/touch_sensor/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/driver/twai/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/driver/touch_sensor/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_i2c/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_i2c/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_twai/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_twai/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_touch_sens/esp32/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_hal_touch_sens/include -I/Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_driver_gpio/include @"/Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga=. -fmacro-prefix-map=/Users/morrisaaron/.espressif/v6.0/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/cmd_system/CMakeFiles/__idf_cmd_system.dir/cmd_system.c.obj -MF esp-idf/cmd_system/CMakeFiles/__idf_cmd_system.dir/cmd_system.c.obj.d -o esp-idf/cmd_system/CMakeFiles/__idf_cmd_system.dir/cmd_system.c.obj -c /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/cmd_system/cmd_system.c
+/Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/external/bluepad32/src/components/cmd_system/cmd_system.c:20:10: fatal error: driver/uart.h: No such file or directory
+   20 | #include <driver/uart.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+[188/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/sdp_util.c.obj
+[189/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/sdp_server.c.obj
+[190/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hfp_ag.c.obj
+[191/440] Building C object esp-idf/cmd_nvs/CMakeFiles/__idf_cmd_nvs.dir/cmd_nvs.c.obj
+[192/440] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_compat.c.obj
+[193/440] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_cache.c.obj
+[194/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/pbap_client.c.obj
+[195/440] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_runner.c.obj
+[196/440] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_freertos.c.obj
+[197/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/hfp_hf.c.obj
+[198/440] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity/src/unity.c.obj
+[199/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/classic/rfcomm.c.obj
+[200/440] Building C object esp-idf/btstack/CMakeFiles/__idf_btstack.dir/src/hci.c.obj
+ninja: build stopped: subcommand failed.

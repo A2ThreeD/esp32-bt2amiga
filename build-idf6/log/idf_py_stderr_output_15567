@@ -1,0 +1,55 @@
+Command: cmake -G Ninja -B /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6 -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/Users/morrisaaron/.espressif/tools/python/v6.0/venv/bin/python3 -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+Configuration Report                                                            
+ ────────────────────────────────────────────────────────────────────────────── 
+   Parser Version: 1                                                            
+   Verbosity: default                                                           
+   Defaults policy: sdkconfig                                                   
+   Status: Finished with notifications                                          
+                                                                                
+  Disabled Symbols/Choices With User-Set Value                                  
+   ──────────────────────────────────────────────────────────────────────────   
+    * PARTITION_TABLE_CUSTOM_FILENAME (defined at                               
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/partition_table/K…    
+    with user-set value partitions.csv from                                     
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmp4v18mz3g       
+    * PARTITION_TABLE_FILENAME (defined at                                      
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/partition_table/K…    
+    with user-set value partitions_singleapp_large.csv from                     
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmpf55dsjgo       
+    * ESP_CONSOLE_UART_BAUDRATE (defined at                                     
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_stdio/Kconfig…    
+    with user-set value 115200 from                                             
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmp4v18mz3g       
+    * ESP_WIFI_ENABLED (defined at                                              
+    /Users/morrisaaron/.espressif/v6.0/esp-idf/components/esp_wifi/Kconfig:…    
+    with user-set value n from                                                  
+    /var/folders/wl/h8lpxq9d5573k6xp_g2f2fyc0000gn/T/kconfgen_tmpf55dsjgo       
+   ──────────────────────────────────────────────────────────────────────────   
+ ────────────────────────────────────────────────────────────────────────────── 
+CMake Warning (dev) at /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake:455 (message):
+  Unable to determine default CMAKE_INSTALL_LIBDIR directory because no
+  target architecture is known.  Please enable at least one language before
+  including GNUInstallDirs.
+Call Stack (most recent call first):
+  /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake:298 (_GNUInstallDirs_LIBDIR_get_default)
+  /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake:298 (cmake_language)
+  /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake:547 (_GNUInstallDirs_cache_path)
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:59 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Error at /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component.cmake:289 (message):
+  SRC_DIRS entry '3rd-party/bluedroid/decoder/srce' does not exist.
+Call Stack (most recent call first):
+  /Users/morrisaaron/.espressif/v6.0/esp-idf/tools/cmake/component.cmake:458 (__component_add_sources)
+  external/bluepad32/external/btstack/port/esp32/components/btstack/CMakeLists.txt:73 (idf_component_register)
+
+

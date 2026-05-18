@@ -2,6 +2,7 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_rom_sys.h"
 
 AmigaDB9Mouse::AmigaDB9Mouse(const Pins &pins)
     : pins_(pins), x_phase_(0), y_phase_(0)
@@ -72,6 +73,7 @@ void AmigaDB9Mouse::move(int16_t dx, int16_t dy, int8_t wheel)
 
   while (x != 0 || y != 0)
   {
+    bool emitted_step = false;
     const bool skip_x = ((x % kMouseStepDiv) != 0);
     const bool skip_y = ((y % kMouseStepDiv) != 0);
 
@@ -79,6 +81,7 @@ void AmigaDB9Mouse::move(int16_t dx, int16_t dy, int8_t wheel)
     {
       x_phase_ = (x < 0) ? static_cast<uint8_t>((x_phase_ + 3) & 0x03) : static_cast<uint8_t>((x_phase_ + 1) & 0x03);
       set_axis(pins_.xa, pins_.xb, x_phase_);
+      emitted_step = true;
     }
     if (x < 0)
       x++;
@@ -89,13 +92,17 @@ void AmigaDB9Mouse::move(int16_t dx, int16_t dy, int8_t wheel)
     {
       y_phase_ = (y < 0) ? static_cast<uint8_t>((y_phase_ + 3) & 0x03) : static_cast<uint8_t>((y_phase_ + 1) & 0x03);
       set_axis(pins_.ya, pins_.yb, y_phase_);
+      emitted_step = true;
     }
     if (y < 0)
       y++;
     else if (y > 0)
       y--;
 
-    ets_delay_us(kQuadStepDelayUs);
+    if (emitted_step)
+    {
+      esp_rom_delay_us(kQuadStepDelayUs);
+    }
   }
 }
 

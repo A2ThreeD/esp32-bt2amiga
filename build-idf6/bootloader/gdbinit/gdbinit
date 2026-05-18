@@ -1,0 +1,2 @@
+source /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6/bootloader/gdbinit/symbols
+source /Volumes/External/GitHub/A2ThreeD/esp32-bt2amiga/build-idf6/bootloader/gdbinit/connect

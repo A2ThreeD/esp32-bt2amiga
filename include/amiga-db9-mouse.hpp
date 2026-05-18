@@ -24,11 +24,11 @@ public:
   void set_buttons(uint8_t buttons);
 
 private:
-  static constexpr uint8_t kMouseStepDiv = 2;
-  static constexpr uint32_t kQuadStepDelayUs = 300;
+  static constexpr uint8_t kMouseStepDiv = 1;
+  static constexpr uint32_t kQuadStepDelayUs = 80;
   static constexpr bool kSwapXY = false;
   static constexpr bool kInvertX = false;
-  static constexpr bool kInvertY = false;
+  static constexpr bool kInvertY = true;
 
   static constexpr uint8_t kQuadSeq[4][2] = {
       {0, 0},
